@@ -1,10 +1,9 @@
 import React from 'react'
-import UserCard from "./Account/UserCard";
-import CurrentUserCard from "./Account/CurrentUserCard";
-import ButtonAdminAccounts from "./Account/ButtonAdminAccounts";
+import UserCard from "./UserCard/UserCard";
+import CurrentUserCard from "./CurrentUserCard/CurrentUserCard";
+import ButtonAdminAccounts from "./ButtonAdminAccounts/ButtonAdminAccounts";
 
 class Account extends React.Component {
-    static ChangingPassword;
     constructor(props) {
         super(props);
         this.ChangePassword = this.ChangePassword.bind(this);

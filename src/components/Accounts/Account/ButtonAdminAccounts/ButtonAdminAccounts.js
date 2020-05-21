@@ -1,7 +1,4 @@
 import React from 'react';
-import UserCard from "./UserCard";
-import props from "../Account";
-import Account from "../Account";
 
 class ButtonAdminAccounts extends React.Component {
     constructor(props) {

@@ -43,7 +43,6 @@ class LoginForm extends React.Component {
 
             .then(function (responnse ) {
                 responnse.data
-
             })
 
             .catch(function (error) {

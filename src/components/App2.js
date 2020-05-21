@@ -1,7 +1,7 @@
 import React from 'react';
 import {BrowserRouter, Route, Switch} from "react-router-dom";
 import LoginForm from "./LoginForm";
-import Accounts from "./Accounts";
+import Accounts from "./Accounts/Accounts";
 
 class App2 extends React.Component {
 
