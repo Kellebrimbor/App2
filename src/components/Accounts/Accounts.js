@@ -2,6 +2,7 @@ import React from 'react';
 import Account from "./Account/Account";
 import {API, AXIOS_CONFIG} from "../../config/server";
 const axios = require('axios').default;
+import "./Accounts.css";
 
 class Accounts extends React.Component{
 
@@ -15,7 +16,7 @@ class Accounts extends React.Component{
 
     render() {
         return(
-            <div>
+            <div className={"jopa"}>
                 <Account/>
                 <Account/>
                 <Account/>
