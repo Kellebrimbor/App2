@@ -10,26 +10,28 @@ class Account extends React.Component {
         this.ChangePassword = this.ChangePassword.bind(this);
         this.state={
             buttonOnChangePassword: false,
-            password: "",
+            password: "JOPA",
 
         }
     }
+    changeProfile(){}
+    deleteProfile(){}
     ChangePassword(){
-         return  alert(5);
+         this.setState({password: Math.random()})
     }
     render() {
         return (
             <div>
-
-
                         <UserCard/>
-                        <CurrentUserCard  login={"kel"} password={"kel123"} firstName={"abrec"}
+                        <CurrentUserCard  login={"kel"} password={this.state.password} firstName={"abrec"}
                                              lastName={"Feanoring"} patronymic={"Feanoring"}
                                              position={"anti-proger"}
                                              rootPrivileges={"admin"}/>
 
 
-                <ButtonAdminAccounts children={this.ChangePassword}/>
+                <ButtonAdminAccounts handler={this.ChangePassword}
+                                     changeHandler={this.changeProfile}
+                                     deleteProfile={this.deleteProfile}/>
 
 
             </div>

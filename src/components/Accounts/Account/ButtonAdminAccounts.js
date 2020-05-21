@@ -9,11 +9,6 @@ class ButtonAdminAccounts extends React.Component {
         this.changeProfile = this.changeProfile.bind(this);
         this.deleteProfile = this.deleteProfile.bind(this);
     }
-
-change(){
-
-}
-
     changeProfile() {
         alert(2);
     }
@@ -25,7 +20,7 @@ change(){
     render() {
         return (
             <div>
-            <button onClick={this.ChangePassword}>Сменить пароль</button>
+            <button onClick={this.props.handler}>Сменить пароль</button>
                 <button onClick={this.changeProfile}>Редактировать профиль</button>
                 <button onClick={this.deleteProfile}>Удалить профиль</button>
             </div>
